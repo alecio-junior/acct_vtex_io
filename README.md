@@ -10,5 +10,12 @@ Escopo do desafio: VTEX IO + AWS
 
 Página home [logo e cores da ACCT, lista de produtos cadastrados]:
 
+<div align="center">
+<img src="https://user-images.githubusercontent.com/83875408/132267352-00c72fd3-9291-4292-b791-dd9ef3ec191c.gif" width="600px" />
+</div>
 
 Página sobre nós [virtudes do serviço da ACCT, trusted by e time]:
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/83875408/132267397-9deb0b5e-d210-468b-a280-f5cb38273c45.gif" width="600px" />
+</div>
