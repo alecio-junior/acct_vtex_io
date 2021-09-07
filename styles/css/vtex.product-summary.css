@@ -1,0 +1,22 @@
+.container--cardProduct{
+    background-color: #f0f0f0;
+}
+
+.element{
+    background-color:#f0f0f0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.brandName{
+    color: black;
+}
+
+.productNameContainer{
+    padding-left: 10px;
+}
+
+.imageNormal {
+    width: 100vw;
+    border-radius: 0px;
+}

@@ -1,0 +1,12 @@
+/*
+  Aqui é onde as fontes personalizadas do projeto serão instaladas, todas são oriundas do Google Fonts ;)
+*/
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/RobotoCondensed-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url(assets/fonts/OpenSans-Regular.ttf);
+  }

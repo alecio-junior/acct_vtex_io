@@ -1,0 +1,78 @@
+{
+  "search-result-layout.desktop#lp": {
+    "children": [
+      "search-content#lp"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "gallery#lp"
+    }
+  },
+  "search-result-layout.mobile#lp": {
+    "children": [
+      "search-content#lp-mobile"
+    ],
+    "props": {
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "gallery#lp-mobile"
+    }
+  },
+  "search-content#lp": {
+    "blocks": [
+      "gallery#lp",
+      "not-found"
+    ]
+  },
+  "gallery#lp": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "ListSummary": "product-summary.shelf#lp",
+      "GridSummary": "product-summary.shelf#lp"
+    }
+  },
+  "search-content#lp-mobile": {
+    "blocks": [
+      "gallery#lp-mobile",
+      "not-found"
+    ]
+  },
+  "gallery#lp-mobile": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:600px)": 1,
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "ListSummary": "product-summary.shelf#lp",
+      "GridSummary": "product-summary.shelf#lp"
+    }
+  }
+}

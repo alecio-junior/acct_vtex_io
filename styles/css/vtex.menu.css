@@ -1,0 +1,42 @@
+.styledLinkContent{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.styledLinkContent:hover{
+    color: gold;
+}
+
+.menuContainer--sobre{
+    padding-top: 120px;
+    padding-left: 420px;
+}
+
+.styledLinkContent--saibamais{
+    color: #5974c7;
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+
+.styledLinkContent--saibamais:hover{
+    color: #fff;
+}
+
+.menuContainer--saibamais{
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem--saibamais{
+    border-radius: 5px;
+    border: 2px solid #5974c7;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.menuItem--saibamais:hover{
+    border-radius: 10px;
+    border: 2px solid #5974c7;
+    margin-top: 20px;
+    background-color: #5974c7;
+}

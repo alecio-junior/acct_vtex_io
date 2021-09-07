@@ -1,0 +1,1583 @@
+{
+  /*
+    Trecho page home
+  */
+  // Texto buscamos liderança
+  "flex-layout.row#buscamoslideranca": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "blockClass": "buscamos"
+    },
+    "children": [
+      "rich-text#buscamos"
+    ]
+  },
+  "rich-text#buscamos": {
+    "props": {
+      "text": "Buscamos constantemente a **liderança global**\nquando se trata de **soluções para comércio digital**.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2",
+      "blockClass": "buscamos"
+    }
+  },
+  //assunto
+  "flex-layout.row#assunto": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "marginTop": 5,
+      "blockClass": "assunto"
+    },
+    "children": [
+      "rich-text#assunto"
+    ]
+  },
+  "rich-text#assunto": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "text": "Quando o assunto é e-commerce, somos líderes! Desenvolvemos soluções para empresas que buscam crescimento. Seja a criação de um aplicativo móvel, um site totalmente novo ou aumentar o desempenho e a inteligência da sua organização, nós oferecemos o suporte necessário às empresas na era digital.",
+      "textColor": "c-on-disabled",
+      "font": "t-heading-6",
+      "blockClass": "assunto"
+    }
+  },
+  //menu saiba mais
+  "flex-layout.row#saibamais": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "marginTop": 5,
+      "blockClass": "saibamais"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites2"
+    ]
+  },
+  "vtex.menu@2.x:menu#websites2": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "menu-item#maissobre"
+    ]
+  },
+  "menu-item#maissobre": {
+    "props": {
+      "blockClass":"saibamais",
+      "id": "menu-item-maissobre",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "maissobre",
+        "text": "Saiba mais sobre nós!"
+      }
+    }
+  },
+  /*
+    Trecho de codigo referente à about us ACCT page
+  */
+  //banner sobre nos
+  "flex-layout.row#banner": {
+    "props": {
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "banner"
+    },
+    "children": [
+      "rich-text#sobrenos"
+    ]
+  },
+  "rich-text#sobrenos": {
+    "props": {
+      "text": "SOBRE NÓS**_**",
+      "textAlignment": "CENTER",
+      "font": "t-heading-2",
+      "blockClass": "sobre-nos"
+    }
+  },
+  /*
+    bloco Projetando o futuro do comércio digital
+  */
+  "flex-layout.row#projetando": {
+    "props": {
+      "blockClass": "projetando",
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#projetando"
+    ]
+  },
+  "rich-text#projetando": {
+    "props": {
+      "text": "Projetando o **futuro do comércio digital**",
+      "textAlignment": "CENTER",
+      "textPosition": "center",
+      "font": "t-heading-2",
+      "blockClass": "projetando"
+    }
+  },
+  /*
+    Bloco referente às rows e cols dos slides da page about us
+  */
+  //1 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider1": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider1-col1",
+      "flex-layout.col#slider1-col2"
+    ]
+  },
+  //insere as linhas de texto na primeira coluna
+  "flex-layout.col#slider1-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "CENTER",
+      "blockClass": "somos"
+    },
+    "children": [
+      "flex-layout.row#somos"
+    ]
+  },
+  "flex-layout.row#somos": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "somos"
+    },
+    "children": [
+      "rich-text#somos"
+    ]
+  },
+  //texto somos
+  "rich-text#somos": {
+    "props": {
+      "text": "Somos uma empresa de arquitetura e engenharia de software com 11 anos de história solucionando problemas de negócios com tecnologia.\n\nA ACCT passou por um rápido crescimento nos últimos 5 anos e hoje tem mais de 200 funcionários, em 3 países diferentes.\nNós também temos o orgulho de dizer que a ACCT esteve envolvida em algumas das maiores implementações e projetos de e-commerce do mundo.\nClientes globais como Unilever, Ab-Inbev, Carrefour e Whirpool nos escolheram para desenvolver seus produtos digitais porque confiam em nossa capacidade de fornecer soluções com a mais alta qualidade de design, engenharia e desenvolvimento",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass": "somos"
+    }
+  },
+  //insere imagem da segunda coluna
+  "flex-layout.col#slider1-col2": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "imagem-about-us"
+    },
+    "children": [
+      "image#about-us"
+    ]
+  },
+  //imagem 1
+  "image#about-us": {
+    "props": {
+      "src": "assets/img-about-us.jpg",
+      "alt": "img-about-us",
+      "maxWidth": "50%",
+      "blockClass": "imageValores"
+    }
+  },
+  //2 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider2": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider2-col1",
+      "flex-layout.col#slider2-col2"
+    ]
+  },
+  //insere as linhas de texto da primeira coluna
+  "flex-layout.col#slider2-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": "bemvindo"
+    },
+    "children": [
+      "flex-layout.row#bemvindo"
+    ]
+  },
+  "flex-layout.row#bemvindo": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "top",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "bemvindo"
+    },
+    "children": [
+      "rich-text#slide2"
+    ]
+  },
+  //texto slide 2
+  "rich-text#slide2": {
+    "props": {
+      "text": "**BEM-VINDO! CONHEÇA MAIS A GENTE E A NOSSA CULTURA**\nSomos a ACCT Consulting & Technology, empresa de desenvolvimento de software com foco em projetos transnacionais de tecnologia.\nCom sede em Atibaia,no estado de São Paulo, contamos também com escritórios nos EUA e na Europa.\nNossa cultura é pautada pela crença em equipes diversas que trazem resultados inovadores, mais ricos e que impactam diretamente na qualidade de todas entregas, com diferentes opiniões e pontos de vista diversos.\nNos comprometemos em proporcionar oportunidades iguais para todas as pessoas garantindo que não haja distinção por questões de ordem racial,identidade de gênero, orientação sexual, etnia,origem, deficiência, idade, religião ou qualquer outro aspecto da aparência ou do histórico.\nAssim, buscamos juntos, oportunidades e iniciativas que possam tornar nossa empresa cada vez mais diversa, plural e inclusiva.\n Queremos aproveitar as diferenças para construir juntos histórias memoráveis, com foco no processo contínuo de inovação e de construção para uma cultura mais diversa e inclusiva.\n**Nossos valores: Respeito, Responsabilidade, Agilidade**",
+      "textPosition": "LEFT",
+      "blockClass":"bemvindo"
+    }
+  },
+  //insere imagem da segunda coluna no slide 2
+  "flex-layout.col#slider2-col2": {
+    "props": {
+      "horizontalAlign": "rigth",
+      "blockClass": "image-institutional"
+    },
+    "children": [
+      "image#institutional"
+    ]
+  },
+  //imagem 2
+  "image#institutional": {
+    "props": {
+      "src": "assets/tech-workspace.jpg",
+      "alt": "tech-workspace",
+      "maxWidth": "100%",
+      "blockClass": "imageValores"
+    }
+  },
+  //3 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider3": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider3-col1",
+      "flex-layout.col#slider3-col2"
+    ]
+  },
+  //insere as linhas de texto da primeira coluna
+  "flex-layout.col#slider3-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": "respeito"
+    },
+    "children": [
+      "flex-layout.row#respeito"
+    ]
+  },
+  "flex-layout.row#respeito": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "respeito"
+    },
+    "children": [
+      "rich-text#slide3"
+    ]
+  },
+  //texto slide 3
+  "rich-text#slide3": {
+    "props": {
+      "text": "**Respeito**\n* É a base para todo relacionamento, seja com o outro, com o cliente ou com o fornecedor.\n* É saber respeitar a opinião dada sobre um assunto, é saber o limite e compreender a situação de cada um. É respeitar as decisões.\n* É se colocar no lugar do outro, é tratar o próximo como gostaria de ser tratado.\n* É não ter preconceito.",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass": "respeito"
+    }
+  },
+  //insere imagem da segunda coluna no slide 3
+  "flex-layout.col#slider3-col2": {
+    "props": {
+      "horizontalAlign": "rigth",
+      "blockClass": "respeito"
+    },
+    "children": [
+      "image#slide3"
+    ]
+  },
+  //imagem 3
+  "image#slide3": {
+    "props": {
+      "src": "assets/institutionalImage.png",
+      "alt": "institutional Image",
+      "maxWidth": "100%",
+      "blockClass": "imageValores"
+    }
+  },
+  //4 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider4": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass":"slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider4-col1",
+      "flex-layout.col#slider4-col2"
+    ]
+  },
+  //insere as linhas de texto na primeira coluna
+  "flex-layout.col#slider4-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "CENTER",
+      "blockClass": "responsabilidade"
+    },
+    "children": [
+      "flex-layout.row#responsabilidade"
+    ]
+  },
+  "flex-layout.row#responsabilidade": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "responsabilidade"
+    },
+    "children": [
+      "rich-text#responsabilidade"
+    ]
+  },
+  //texto responsabilidade
+  "rich-text#responsabilidade": {
+    "props": {
+      "text": "**Responsabilidade**\n* É muito além do que apenas fazer a entrega de um projeto no prazo.\n* É cuidar do seu squad, é garantir uma boa comunicação e ter o total entendimento do outro, é dar opinião, é não permitir que fique algo inacabado, é saber a hora de dizer sim e principalmente não. ",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass": "responsabilidade"
+    }
+  },
+  //insere imagem da segunda coluna
+  "flex-layout.col#slider4-col2": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "responsabilidade"
+    },
+    "children": [
+      "image#responsabilidade"
+    ]
+  },
+  //imagem 4
+  "image#responsabilidade": {
+    "props": {
+      "src": "assets/computers2.png",
+      "alt": "computers2",
+      "maxWidth": "100%",
+      "blockClass": "imageValores"
+    }
+  },
+  //5 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider5": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider5-col1",
+      "flex-layout.col#slider5-col2"
+    ]
+  },
+  //insere as linhas de texto na primeira coluna
+  "flex-layout.col#slider5-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "CENTER",
+      "blockClass": "agilidade"
+    },
+    "children": [
+      "flex-layout.row#agilidade"
+    ]
+  },
+  "flex-layout.row#agilidade": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "agilidade"
+    },
+    "children": [
+      "rich-text#agilidade"
+    ]
+  },
+  //texto agilidade
+  "rich-text#agilidade": {
+    "props": {
+      "text": "**Agilidade**\n* Nos baseamos no Manifesto Ágil. Temos que ter claro que agilidade não é velocidade.\n* É levar para si que processos e ferramentas garantem o trabalho organizado e otimizado, mas é primordial que cada um tenha competência e trabalhe de forma responsável e eficiente.\n* É ter como prioridade satisfazer o cliente e para isso, deve-se entender a necessidade do projeto para que todos busquem o mesmo objetivo.",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass": "agilidade"
+    }
+  },
+  //insere imagem da segunda coluna
+  "flex-layout.col#slider5-col2": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "agilidade"
+    },
+    "children": [
+      "image#agilidade"
+    ]
+  },
+  //imagem 5
+  "image#agilidade": {
+    "props": {
+      "src": "assets/tecnologia-de-internet-em-nuvem.jpg",
+      "alt": "tecnologia-de-internet-em-nuvem",
+      "maxWidth": "100%",
+      "blockClass": "imageValores"
+    }
+  },
+  //6 slider 1 coluna de texto 1 coluna com imagem
+  "flex-layout.row#slider6": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "slidersValores"
+    },
+    "children": [
+      "flex-layout.col#slider6-col1",
+      "flex-layout.col#slider6-col2"
+    ]
+  },
+  //insere as linhas de texto na primeira coluna
+  "flex-layout.col#slider6-col1": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "CENTER",
+      "blockClass": "nossodia"
+    },
+    "children": [
+      "flex-layout.row#nossodia"
+    ]
+  },
+  "flex-layout.row#nossodia": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "nossodia"
+    },
+    "children": [
+      "rich-text#nossodia"
+    ]
+  },
+  //texto agilidade
+  "rich-text#nossodia": {
+    "props": {
+      "text": "**Nosso dia a dia**\n* **Somos xóvens** - A gente é na maioria um povo beeeeem descolado e trazemos isso na nossa cultura e na forma como nos comunicamos com o time.\n* **Gostamos de um agito** - A gente AMA uma festa e mesmo remotos, não deixamos essa vibe sumir. Então não se surpreenda em ouvir o hit do momento durante nossos encontros. Com certeza você vai curtir os concursos e atividades temáticas que rolam por aqui ;)\n* **Demo Friday e All Hands** - Mesmo distante estamos juntos <3 Temos dois encontros gerais para matar a saudade dos amigos, compartilhar conhecimento e ficar por dentro das novidades da nossa empresa!\n* **Somos ágeis** - Curtimos muito fazer aquela entrega no prazo, mas com valor agregado para o cliente. E por isso usamos e abusamos de metodologias ágeis.",
+      "textPosition": "LEFT",
+      "font": "t-heading-6",
+      "blockClass": "nossodia"
+    }
+  },
+  //insere imagem da segunda coluna
+  "flex-layout.col#slider6-col2": {
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": "nossodia"
+    },
+    "children": [
+      "image#nossodia"
+    ]
+  },
+  //imagem 6
+  "image#nossodia": {
+    "props": {
+      "src": "assets/institutionalImage.png",
+      "alt": "institutionalImage",
+      "maxWidth": "100%",
+      "blockClass": "imageValores"
+    }
+  },
+  //bloco da pergunta
+  "flex-layout.row#why": {
+    "props": {
+      "blockClass": "why"
+    },
+    "children": [
+      "rich-text#why"
+    ]
+  },
+  "rich-text#why": {
+    "props": {
+      "text": "Por que a ACCT?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3",
+      "blockClass": "why"
+    }
+  },
+  //bloco de declaração das imagems e textos de resposta
+  "flex-layout.row#reasons": {
+    "props": {
+      "blockClass": "reasons",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#1",
+      "flex-layout.col#2",
+      "flex-layout.col#3",
+      "flex-layout.col#4",
+      "flex-layout.col#5"
+    ]
+  },
+  "flex-layout.col#1": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#why-image1",
+      "flex-layout.row#why-text1"
+    ]
+  },
+  "flex-layout.col#2": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#why-image2",
+      "flex-layout.row#why-text2"
+    ]
+  },
+  "flex-layout.col#3": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#why-image3",
+      "flex-layout.row#why-text3"
+    ]
+  },
+  "flex-layout.col#4": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#why-image4",
+      "flex-layout.row#why-text4"
+    ]
+  },
+  "flex-layout.col#5": {
+    "props": {
+      "verticalAlign": "center",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#why-image5",
+      "flex-layout.row#why-text5"
+    ]
+  },
+  //conteudo das imagens e textos
+  //col 1
+  "flex-layout.row#why-image1": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "why"
+    },
+    "children": [
+      "image#col1"
+    ]
+  },
+  "image#col1": {
+    "props": {
+      "src": "assets/icon_dashboard.png",
+      "alt": "",
+      "maxWidth": "20%",
+      "blockClass": "iconReasons"
+    }
+  },
+  "flex-layout.row#why-text1": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#col1"
+    ]
+  },
+  "rich-text#col1": {
+    "props": {
+      "text": "Engenharia de Dados de Alta Complexidade",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  //col 2
+  "flex-layout.row#why-image2": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "why"
+    },
+    "children": [
+      "image#col2"
+    ]
+  },
+  "image#col2": {
+    "props": {
+      "src": "assets/icon_development.png",
+      "alt": "",
+      "maxWidth": "20%",
+      "blockClass": "iconReasons"
+    }
+  },
+  "flex-layout.row#why-text2": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#col2"
+    ]
+  },
+  "rich-text#col2": {
+    "props": {
+      "text": "Habilidades Técnicas",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  //col 3
+  "flex-layout.row#why-image3": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "why"
+    },
+    "children": [
+      "image#col3"
+    ]
+  },
+  "image#col3": {
+    "props": {
+      "src": "assets/icon_integration.png",
+      "alt": "",
+      "maxWidth": "20%",
+      "blockClass": "iconReasons"
+    }
+  },
+  "flex-layout.row#why-text3": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#col3"
+    ]
+  },
+  "rich-text#col3": {
+    "props": {
+      "text": "Líder de Mercado em Implementações VTEX IO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  //col 4
+  "flex-layout.row#why-image4": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "why"
+    },
+    "children": [
+      "image#col4"
+    ]
+  },
+  "image#col4": {
+    "props": {
+      "src": "assets/icon_customer-service.png",
+      "alt": "",
+      "maxWidth": "20%",
+      "blockClass": "iconReasons"
+    }
+  },
+  "flex-layout.row#why-text4": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#col4"
+    ]
+  },
+  "rich-text#col4": {
+    "props": {
+      "text": "Excelente Suporte ao Cliente",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  //col 5
+  "flex-layout.row#why-image5": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "why"
+    },
+    "children": [
+      "image#col5"
+    ]
+  },
+  "image#col5": {
+    "props": {
+      "src": "assets/icon_shield.png",
+      "alt": "",
+      "maxWidth": "20%",
+      "blockClass": "iconReasons"
+    }
+  },
+  "flex-layout.row#why-text5": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#col5"
+    ]
+  },
+  "rich-text#col5": {
+    "props": {
+      "text": "Segurança e Confiabilidade",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-6"
+    }
+  },
+  /*
+    Bloco trusted
+  */
+  "flex-layout.row#trustedby": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "trustedby"
+    },
+    "children": [
+      "rich-text#trustedby"
+    ]
+  },
+  //Título da área "Trusted by_", com o markdown negrito no underline (que ficará amarelo), centralizado na página, puxando toda a estilização do "subtitle"
+  "rich-text#trustedby": {
+    "props": {
+      "text": "Trusted by**_**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "subtitle"
+    }
+  },
+  /*
+    Primeira linha que tem como filho um image-list com as cinco primeiras empresas
+  */
+  "flex-layout.row#Icons1": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "icons1"
+    },
+    "children": [
+      "image-list#trustedLINHA1"
+    ]
+  },
+  /*
+    Segunda linha que tem como filho um image-list com as cinco últimas empresas
+  */
+  "flex-layout.row#Icons2": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "icons2"
+    },
+    "children": [
+      "image-list#trustedLINHA2"
+    ]
+  },
+  /*
+    Array das cinco primeiras imagens que serão impressas na primeira linha → "flex-layout.row#Icons1"
+  */
+  "image-list#trustedLINHA1": {
+    "props": {
+      "blockClass": "iconTrusted",
+      "images": [
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_carrefour.svg",
+          "description": "Ícone Carrefour"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_samsung.svg",
+          "description": "Ícone Samsung"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_abinbev.svg",
+          "description": "Ícone ABinBev"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_stanley-black-decker.svg",
+          "description": "Ícone Stanley Black Decker"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_motorola.svg",
+          "description": "Ícone Motorola"
+        }
+      ]
+    }
+  },
+  /*
+    Array das cinco últimas imagens que serão impressas na segunda linha → "flex-layout.row#Icons2"
+  */
+  "image-list#trustedLINHA2": {
+    "props": {
+      "blockClass": "iconTrusted",
+      "images": [
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_unilever.svg",
+          "description": "Ícone Unilever"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_whirlpool.svg",
+          "description": "Ícone Whirlpool"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_universal-mg.svg",
+          "description": "Ícone Universal"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_decathlon.svg",
+          "description": "Ícone Decathlon"
+        },
+        {
+          "image": "https://acct.global/wp-content/uploads/2020/09/clients_cea.svg",
+          "description": "C&A"
+        }
+      ]
+    }
+  },
+  /*
+    Bloco de colaboradores
+  */
+  /*1º COLABORADOR*/
+  "flex-layout.row#image1": {
+    "children": [
+      "image#time1"
+    ]
+  },
+  "image#time1": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/frederico-heitmann-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name1": {
+    "children": [
+      "rich-text#nome1"
+    ]
+  },
+  "rich-text#nome1": {
+    "props": {
+      "text": "Frederico Heitmann",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function1": {
+    "children": [
+      "rich-text#funcao1"
+    ]
+  },
+  "rich-text#funcao1": {
+    "props": {
+      "text": "CEO & Partner",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*2º COLABORADOR*/
+  "flex-layout.row#image2": {
+    "children": [
+      "image#time2"
+    ]
+  },
+  "image#time2": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/fabio-feichtinger-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name2": {
+    "children": [
+      "rich-text#nome2"
+    ]
+  },
+  "rich-text#nome2": {
+    "props": {
+      "text": "Fábio Feichtinger",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function2": {
+    "children": [
+      "rich-text#funcao2"
+    ]
+  },
+  "rich-text#funcao2": {
+    "props": {
+      "text": "CTO & Partner",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*3º COLABORADOR*/
+  "flex-layout.row#image3": {
+    "children": [
+      "image#time3"
+    ]
+  },
+  "image#time3": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/andre-dudek-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name3": {
+    "children": [
+      "rich-text#nome3"
+    ]
+  },
+  "rich-text#nome3": {
+    "props": {
+      "text": "André Dudek",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function3": {
+    "children": [
+      "rich-text#funcao3"
+    ]
+  },
+  "rich-text#funcao3": {
+    "props": {
+      "text": "Director & Partner",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*4º COLABORADOR*/
+  "flex-layout.row#image4": {
+    "children": [
+      "image#time4"
+    ]
+  },
+  "image#time4": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/fatima-raizaro-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name4": {
+    "children": [
+      "rich-text#nome4"
+    ]
+  },
+  "rich-text#nome4": {
+    "props": {
+      "text": "Fátima Raizaro",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function4": {
+    "children": [
+      "rich-text#funcao4"
+    ]
+  },
+  "rich-text#funcao4": {
+    "props": {
+      "text": "Head of RH",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*5º COLABORADOR*/
+  "flex-layout.row#image5": {
+    "children": [
+      "image#time5"
+    ]
+  },
+  "image#time5": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/juan-nader-150x150.jpg",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name5": {
+    "children": [
+      "rich-text#nome5"
+    ]
+  },
+  "rich-text#nome5": {
+    "props": {
+      "text": "Juan Nader",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function5": {
+    "children": [
+      "rich-text#funcao5"
+    ]
+  },
+  "rich-text#funcao5": {
+    "props": {
+      "text": "Head of Marketing",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*6º COLABORADOR*/
+  "flex-layout.row#image6": {
+    "children": [
+      "image#time6"
+    ]
+  },
+  "image#time6": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/anna-chimenes-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name6": {
+    "children": [
+      "rich-text#nome6"
+    ]
+  },
+  "rich-text#nome6": {
+    "props": {
+      "text": "Anna Chimenes",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function6": {
+    "children": [
+      "rich-text#funcao6"
+    ]
+  },
+  "rich-text#funcao6": {
+    "props": {
+      "text": "Head de Controladoria e Backoffice",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*7º COLABORADOR*/
+  "flex-layout.row#image7": {
+    "children": [
+      "image#time7"
+    ]
+  },
+  "image#time7": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/marcos-cipriani-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name7": {
+    "children": [
+      "rich-text#nome7"
+    ]
+  },
+  "rich-text#nome7": {
+    "props": {
+      "text": "Marcos Cipriani",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function7": {
+    "children": [
+      "rich-text#funcao7"
+    ]
+  },
+  "rich-text#funcao7": {
+    "props": {
+      "text": "General Manager Europe",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*8º COLABORADOR*/
+  "flex-layout.row#image8": {
+    "children": [
+      "image#time8"
+    ]
+  },
+  "image#time8": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/rafael-esberard-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name8": {
+    "children": [
+      "rich-text#nome8"
+    ]
+  },
+  "rich-text#nome8": {
+    "props": {
+      "text": "Rafael Esberard",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function8": {
+    "children": [
+      "rich-text#funcao8"
+    ]
+  },
+  "rich-text#funcao8": {
+    "props": {
+      "text": "SVP of Global Sales",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*9º COLABORADOR*/
+  "flex-layout.row#image9": {
+    "children": [
+      "image#time9"
+    ]
+  },
+  "image#time9": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/carlos-oliveira-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name9": {
+    "children": [
+      "rich-text#nome9"
+    ]
+  },
+  "rich-text#nome9": {
+    "props": {
+      "text": "Carlos Oliveira",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function9": {
+    "children": [
+      "rich-text#funcao9"
+    ]
+  },
+  "rich-text#funcao9": {
+    "props": {
+      "text": "Sales Manager Brazil",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*10º COLABORADOR*/
+  "flex-layout.row#image10": {
+    "children": [
+      "image#time10"
+    ]
+  },
+  "image#time10": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/cecilia-pereira-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name10": {
+    "children": [
+      "rich-text#nome10"
+    ]
+  },
+  "rich-text#nome10": {
+    "props": {
+      "text": "Cecília Pereira",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function10": {
+    "children": [
+      "rich-text#funcao10"
+    ]
+  },
+  "rich-text#funcao10": {
+    "props": {
+      "text": "Head of Trainning and Development",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*11º COLABORADOR*/
+  "flex-layout.row#image11": {
+    "children": [
+      "image#time11"
+    ]
+  },
+  "image#time11": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/urania-reis-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name11": {
+    "children": [
+      "rich-text#nome11"
+    ]
+  },
+  "rich-text#nome11": {
+    "props": {
+      "text": "Urânia Reis",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function11": {
+    "children": [
+      "rich-text#funcao11"
+    ]
+  },
+  "rich-text#funcao11": {
+    "props": {
+      "text": "Head of Quality Assurance",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*12º COLABORADOR*/
+  "flex-layout.row#image12": {
+    "children": [
+      "image#time12"
+    ]
+  },
+  "image#time12": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/guilherme-cardoso-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name12": {
+    "children": [
+      "rich-text#nome12"
+    ]
+  },
+  "rich-text#nome12": {
+    "props": {
+      "text": "Guilherme Cardoso",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function12": {
+    "children": [
+      "rich-text#funcao12"
+    ]
+  },
+  "rich-text#funcao12": {
+    "props": {
+      "text": "Head of Engineering",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*13º COLABORADOR*/
+  "flex-layout.row#image13": {
+    "children": [
+      "image#time13"
+    ]
+  },
+  "image#time13": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/rodrigo-de-gouveia-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name13": {
+    "children": [
+      "rich-text#nome13"
+    ]
+  },
+  "rich-text#nome13": {
+    "props": {
+      "text": "Rodrigo de Gouveia",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function13": {
+    "children": [
+      "rich-text#funcao13"
+    ]
+  },
+  "rich-text#funcao13": {
+    "props": {
+      "text": "Design Experience Director",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*14º COLABORADOR*/
+  "flex-layout.row#image14": {
+    "children": [
+      "image#time14"
+    ]
+  },
+  "image#time14": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/03/ammon-cunha-150x150.jpg",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name14": {
+    "children": [
+      "rich-text#nome14"
+    ]
+  },
+  "rich-text#nome14": {
+    "props": {
+      "text": "Ammon Cunha",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function14": {
+    "children": [
+      "rich-text#funcao14"
+    ]
+  },
+  "rich-text#funcao14": {
+    "props": {
+      "text": "Head of Business Intelligence",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*15º COLABORADOR*/
+  "flex-layout.row#image15": {
+    "children": [
+      "image#time15"
+    ]
+  },
+  "image#time15": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/barbara-cruz-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name15": {
+    "children": [
+      "rich-text#nome15"
+    ]
+  },
+  "rich-text#nome15": {
+    "props": {
+      "text": "Bárbara Cruz",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function15": {
+    "children": [
+      "rich-text#funcao15"
+    ]
+  },
+  "rich-text#funcao15": {
+    "props": {
+      "text": "Design Experience",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*16º COLABORADOR*/
+  "flex-layout.row#image16": {
+    "children": [
+      "image#time16"
+    ]
+  },
+  "image#time16": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/ana-lebre-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name16": {
+    "children": [
+      "rich-text#nome16"
+    ]
+  },
+  "rich-text#nome16": {
+    "props": {
+      "text": "Ana Lebre",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function16": {
+    "children": [
+      "rich-text#funcao16"
+    ]
+  },
+  "rich-text#funcao16": {
+    "props": {
+      "text": "Sales Analyst",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*17º COLABORADOR*/
+  "flex-layout.row#image17": {
+    "children": [
+      "image#time17"
+    ]
+  },
+  "image#time17": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/victor-angelotti-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name17": {
+    "children": [
+      "rich-text#nome17"
+    ]
+  },
+  "rich-text#nome17": {
+    "props": {
+      "text": "Victor Angelotti",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function17": {
+    "children": [
+      "rich-text#funcao17"
+    ]
+  },
+  "rich-text#funcao17": {
+    "props": {
+      "text": "Designer",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*18º COLABORADOR*/
+  "flex-layout.row#image18": {
+    "children": [
+      "image#time18"
+    ]
+  },
+  "image#time18": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/02/camila-santos-150x150.png",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name18": {
+    "children": [
+      "rich-text#nome18"
+    ]
+  },
+  "rich-text#nome18": {
+    "props": {
+      "text": "Camila Santos",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function18": {
+    "children": [
+      "rich-text#funcao18"
+    ]
+  },
+  "rich-text#funcao18": {
+    "props": {
+      "text": "Sales Analyst",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  },
+  /*19º COLABORADOR*/
+  "flex-layout.row#image19": {
+    "children": [
+      "image#time19"
+    ]
+  },
+  "image#time19": {
+    "props": {
+      "src": "https://acct.global/wp-content/uploads/2021/03/rafael-rossini-150x150.jpg",
+      "blockClass": "imgTime"
+    }
+  },
+  "flex-layout.row#name19": {
+    "children": [
+      "rich-text#nome19"
+    ]
+  },
+  "rich-text#nome19": {
+    "props": {
+      "text": "Rafael Rossini",
+      "textPosition": "center",
+      "blockClass": "nameColab"
+    }
+  },
+  "flex-layout.row#function19": {
+    "children": [
+      "rich-text#funcao19"
+    ]
+  },
+  "rich-text#funcao19": {
+    "props": {
+      "text": "Developer",
+      "textPosition": "center",
+      "blockClass": "functionColab"
+    }
+  }
+}

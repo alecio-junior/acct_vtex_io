@@ -1,0 +1,179 @@
+/*
+    Texto Projetando o futuro do comércio digital
+*/
+
+.container--projetando{
+    font-size: 2rem;
+    color: #040404;
+    margin: 0.75rem 0 1.2rem 0;
+    line-height: 1.4;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    Texto do cabeçalho Sobre nós_
+*/
+.paragraph--sobre-nos{
+    color: white;
+    height: 20vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+/*
+    Customização dos títulos; ex.: "Trusted by_" e "Time_"
+*/
+.container--subtitle{
+    margin: 40px;
+}
+
+.wrapper--subtitle{
+    font-size: 2rem;
+    color: #040404;
+    margin: 0.75rem 0 1.5rem 0;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 130px;
+    padding-top: 2px;
+}
+
+.wrapper--why{
+    font-size: 2rem;
+    color: #040404;
+    margin: 0.75rem 0 1.5rem 0;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 130px;
+    padding-top: 2px;
+}
+
+/*
+    Customização da legenda, aquela frase após o "Time_" na pagina "Sobre nós"
+*/
+.wrapper--legenda{
+    margin: 1.5rem 0;
+    font-family: "Open Sans" !important;
+    font-weight: 500;
+    color: #1d1d1d;
+    font-size: 17px;
+    text-align: center;
+    padding: 25px;
+}
+
+/*
+    Os títulos, geralmente, eram acompanhados por um _ amarelo. Estes underlines estavam em negrito (markdown), ser amarelo era uma atribuição do negrito (tanto que é possível identificar isso na "legenda" abaixo do "Time_" onde tem uma parte em negrito && amarelo).
+*/
+.strong{
+    color: #fcc200;
+}
+
+/*
+    Customização do paragraph geral
+*/
+.paragraph{
+    text-align: center;
+    align-items: center;
+}
+
+.paragraph--bemvindo{
+    font-size: 0.8rem;
+}
+/*
+    texto buscamos
+*/
+.paragraph--buscamos{
+    padding-top:95px;
+}
+
+.paragraph--assunto{
+    padding-top:195px;
+    font-weight: 900;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+/*
+    Customização do paragraph dos títulos; ex.: "Trusted by_"
+*/
+.paragraph--subtitle{
+    font-family: "Roboto" !important;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+/*
+    Customização do nome de cada colaborador no slide da página "Sobre nós"
+*/
+.paragraph--nameColab{
+    font-family: "Roboto" !important;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+/*
+    Customização da função de cada colaborador no slide da página "Sobre nós"
+*/
+.paragraph--functionColab{
+    font-family: "Roboto" !important;
+    font-size: 13px;
+    flex-wrap: nowrap; 
+}
+
+/*
+    Customização container de texto
+*/
+.container{
+    max-height: 50px !important;
+}
+
+/*
+    Customização dos textos do footer
+*/
+.container--footerAddress{
+    width: fit-content;
+}
+
+.container--footerTitle{
+    width: fit-content;
+}
+
+.wrapper--footerTitle{
+    vertical-align: top;
+}
+
+.paragraph--footerContact{
+    margin: 0 0 0 10px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 0.9em;
+    width: fit-content;
+    height: fit-content;
+}
+
+.link--footerContact{
+    color: #5974c7;
+    text-decoration: none;
+}
+
+.paragraph--footerTitle{
+    font-family: "Roboto" !important;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    margin: 0 0 0 0;
+}
+
+.paragraph--footerAddress{
+    font-family: "Open Sans" !important;
+    font-size: 0.85rem !important;
+    color: #222;
+    margin: 1.5rem 0;
+    text-align: left;
+}

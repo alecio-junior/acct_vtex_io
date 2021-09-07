@@ -1,0 +1,37 @@
+{
+    "product-summary.shelf#lp": {
+        "children": [
+            "product-summary-name",
+            "product-summary-image#lp",
+            "vtex.product-highlights@2.x:product-highlights",
+            "product-summary-price",
+            "add-to-cart-button#lp"
+        ],
+        "props": {
+            "blockClass": "cardProduct"
+        }
+    },
+    "product-summary-image#lp": {
+        "props": {
+            "showNavigationArrows": true
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights": {
+        "children": [
+            "product-highlight-text#1",
+            "product-highlight-text#2"
+        ]
+    },
+    "product-highlight-text#1": {
+        "props": {
+            "message": "PRÉ LANÇAMENTO",
+            "blockClass": "pre-lancamento"
+        }
+    },
+    "product-highlight-text#2": {
+        "props": {
+            "message": "VALIDAÇÃO A PARTIR DE 09/10/2021",
+            "blockClass": "validacao"
+        }
+    }
+}

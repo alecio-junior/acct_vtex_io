@@ -1,0 +1,135 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": { 
+    "children": [
+      "image#great-place-work",
+      "flex-layout.col#social-media",
+      "flex-layout.col#country-block-1",
+      "flex-layout.col#country-block-2",
+      "flex-layout.col#country-block-3"
+    ]
+  },
+  "image#great-place-work": {
+    "props": {
+      "maxWidth": 122.39,
+      "maxHeight": 177.86,
+      "src": "https://dev-acct.pantheonsite.io/wp-content/uploads/2021/07/selo-gptw-2021.svg"
+    }
+  },
+  "flex-layout.col#social-media":{
+    "children":[
+      "image#acct",
+      "social-networks",
+      "rich-text#contact"
+    ],
+    "props":{
+      "blockClass": "footerSocialMediaBlock"
+    }
+  },
+  "image#acct":{
+    "props": {
+      "width": 150,
+      "height": 50,
+      "src": "https://dev-acct.pantheonsite.io/wp-content/uploads/2021/06/logo-acct-black.svg"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://www.linkedin.com/company/acctglobal/", "name": "Linkedin" },
+        { "url": "https://www.youtube.com/channel/UCv-y0Z8ZIu6kP-MpebdIVZA", "name": "Youtube" },
+        { "url": "https://www.instagram.com/acct.global", "name": "Instagram" }
+      ],
+      "blockClass":"footerSocialNetworks"
+    }
+  },
+  "rich-text#contact":{
+    "props": { 
+      "text": "contato@acct.global",
+      "link": "mailto:contato@acct.global",
+      "blockClass":"footerContact"
+    }
+  },
+  "flex-layout.col#country-block-1":{
+    "children": [
+      "rich-text#country-1-name",
+      "rich-text#country-1-first-address",
+      "rich-text#country-1-second-address"
+    ],
+    "props":{
+      "blockClass": "footerBlock"
+    }
+  },
+  "flex-layout.col#country-block-2":{
+    "children": [
+      "rich-text#country-2-name",
+      "rich-text#country-2-address"
+    ],
+    "props":{
+      "blockClass": "footerBlock"
+    }
+  },
+  "flex-layout.col#country-block-3":{
+    "children": [
+      "rich-text#country-3-name",
+      "rich-text#country-3-address"
+    ],
+    "props":{
+      "blockClass": "footerBlock"
+    }
+  },
+  "rich-text#country-1-name": { 
+    "props": { 
+      "text": "Brasil",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#country-1-first-address": { 
+    "props": { 
+      "text": "Al. Prof. Lucas Nogueira Garcez,\n1395 - Atibaia - SP",
+      "blockClass": "footerAddress"
+    }
+  },
+  "rich-text#country-1-second-address": { 
+    "props": { 
+      "text": "Av. das Nações Unidas, 11.857\n8º Andar - Brooklin – São Paulo - SP",
+      "blockClass": "footerAddress"    
+    }
+  },
+  "rich-text#country-2-name": { 
+    "props": { 
+      "text": "Espanha",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#country-2-address": { 
+    "props": { 
+      "text": "Carrer Provença, 339\n08037 - Barcelona",
+      "blockClass": "footerAddress"
+    }
+  },
+  "rich-text#country-3-name": { 
+    "props": { 
+      "text": "Estados Unidos",
+      "blockClass": "footerTitle"
+    }
+  },
+  "rich-text#country-3-address": { 
+    "props": { 
+      "text": "12 East 49th Street NY\n10017 - New York",
+      "blockClass": "footerAddress"
+    }
+  }
+}

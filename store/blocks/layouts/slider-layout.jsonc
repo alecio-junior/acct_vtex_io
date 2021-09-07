@@ -1,0 +1,516 @@
+{
+    /*
+        slider principal da page home
+    */
+    "slider-layout#home": {
+        "children": [
+            "info-card#1",
+            "info-card#2",
+            "info-card#3",
+            "info-card#4"
+        ],
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "showPaginationDots": "never" //não apresenta os pontos de navegação do slide
+        }
+    },
+    "info-card#1": {
+        "props": {
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "assets/quadrante_vtex_2021.png",
+            "headline": "<br /><br /><br />Somos líder no Quadrante VTEX<br /><br />",
+            "width": "100%",
+            "callToActionText": "Saiba mais",
+            "callToActionUrl": "/product",
+            "blockClass": "info-card-example",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#2": {
+        "props": {
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "assets/slider-home-technology.jpg",
+            "headline": "<br />TECHNOLOGY <br /><br /><br />Somos focados na solução de problemas altamente complexos.<br /><br /><br />",
+            "width": "100%",
+            "callToActionMode": "none",
+            "blockClass": "info-card-example",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#3": {
+        "props": {
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "assets/trabalhadora6.png",
+            "headline": "<br />Engenharia de E-commerce_<br /><br /><br />Equipes de alto desempenho entregando algumas das soluções de e-commerce mais complexas do mundo.<br /><br /><br />",
+            "width": "100%",
+            "callToActionMode": "none",
+            "blockClass": "info-card-example",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#4": {
+        "props": {
+            "isFullModeStyle": true,
+            "textPosition": "left",
+            "imageUrl": "assets/computers2.png",
+            "headline": "<br />Desenvolvimento de Produto_<br /><br /><br />Somos especialistas em projetar e desenvolver produtos digitais de alto desempenho.<br /><br /><br />",
+            "width": "100%",
+            "callToActionMode": "none",
+            "blockClass": "info-card-example",
+            "textAlignment": "center"
+        }
+    },
+    //criação do layout do time da ACCT
+    "slider-layout#time": {
+        "props": {
+            //quantidade de itens apresentados por página dependendo do dispositivo utilizado, neste caso, são 5 colaboradores por página de desktop/computador de mesa
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true, //controle de deslize é infinito
+            "showNavigationArrows": "desktopOnly", //apresenta as setas do slide apenas se o usuário estiver conectado à desktop
+            "showPaginationDots": "never" //não apresenta os pontos de navegação do slide
+        },
+        "children": [
+            //filhos do slide principal, basicamente os containers que teremos para as linhas, para cada container teremos o seguinte padrão → 1ª linha: imagem do colaborador; 2º linha: nome do colaborador; 3ª linha: função do colaborador
+            "slider-layout-group#1",
+            "slider-layout-group#2",
+            "slider-layout-group#3",
+            "slider-layout-group#4",
+            "slider-layout-group#5",
+            "slider-layout-group#6",
+            "slider-layout-group#7",
+            "slider-layout-group#8",
+            "slider-layout-group#9",
+            "slider-layout-group#10",
+            "slider-layout-group#11",
+            "slider-layout-group#12",
+            "slider-layout-group#13",
+            "slider-layout-group#14",
+            "slider-layout-group#15",
+            "slider-layout-group#16",
+            "slider-layout-group#17",
+            "slider-layout-group#18",
+            "slider-layout-group#19"
+        ]
+    },
+    /*1º COLABORADOR*/
+    "slider-layout-group#1": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "flex-layout.row#image1",
+            "flex-layout.row#name1",
+            "flex-layout.row#function1"
+        ]
+    },
+    /*2º COLABORADOR*/
+    "slider-layout-group#2": {
+        "children": [
+            "flex-layout.row#image2",
+            "flex-layout.row#name2",
+            "flex-layout.row#function2"
+        ]
+    },
+    /*3º COLABORADOR*/
+    "slider-layout-group#3": {
+        "children": [
+            "flex-layout.row#image3",
+            "flex-layout.row#name3",
+            "flex-layout.row#function3"
+        ]
+    },
+    /*4º COLABORADOR*/
+    "slider-layout-group#4": {
+        "children": [
+            "flex-layout.row#image4",
+            "flex-layout.row#name4",
+            "flex-layout.row#function4"
+        ]
+    },
+    /*5º COLABORADOR*/
+    "slider-layout-group#5": {
+        "children": [
+            "flex-layout.row#image5",
+            "flex-layout.row#name5",
+            "flex-layout.row#function5"
+        ]
+    },
+    /*6º COLABORADOR*/
+    "slider-layout-group#6": {
+        "children": [
+            "flex-layout.row#image6",
+            "flex-layout.row#name6",
+            "flex-layout.row#function6"
+        ]
+    },
+    /*7º COLABORADOR*/
+    "slider-layout-group#7": {
+        "children": [
+            "flex-layout.row#image7",
+            "flex-layout.row#name7",
+            "flex-layout.row#function7"
+        ]
+    },
+    /*8º COLABORADOR*/
+    "slider-layout-group#8": {
+        "children": [
+            "flex-layout.row#image8",
+            "flex-layout.row#name8",
+            "flex-layout.row#function8"
+        ]
+    },
+    /*9º COLABORADOR*/
+    "slider-layout-group#9": {
+        "children": [
+            "flex-layout.row#image9",
+            "flex-layout.row#name9",
+            "flex-layout.row#function9"
+        ]
+    },
+    /*10º COLABORADOR*/
+    "slider-layout-group#10": {
+        "children": [
+            "flex-layout.row#image10",
+            "flex-layout.row#name10",
+            "flex-layout.row#function10"
+        ]
+    },
+    /*11º COLABORADOR*/
+    "slider-layout-group#11": {
+        "children": [
+            "flex-layout.row#image11",
+            "flex-layout.row#name11",
+            "flex-layout.row#function11"
+        ]
+    },
+    /*12º COLABORADOR*/
+    "slider-layout-group#12": {
+        "children": [
+            "flex-layout.row#image12",
+            "flex-layout.row#name12",
+            "flex-layout.row#function12"
+        ]
+    },
+    /*13º COLABORADOR*/
+    "slider-layout-group#13": {
+        "children": [
+            "flex-layout.row#image13",
+            "flex-layout.row#name13",
+            "flex-layout.row#function13"
+        ]
+    },
+    /*14º COLABORADOR*/
+    "slider-layout-group#14": {
+        "children": [
+            "flex-layout.row#image14",
+            "flex-layout.row#name14",
+            "flex-layout.row#function14"
+        ]
+    },
+    /*15º COLABORADOR*/
+    "slider-layout-group#15": {
+        "children": [
+            "flex-layout.row#image15",
+            "flex-layout.row#name15",
+            "flex-layout.row#function15"
+        ]
+    },
+    /*16º COLABORADOR*/
+    "slider-layout-group#16": {
+        "children": [
+            "flex-layout.row#image16",
+            "flex-layout.row#name16",
+            "flex-layout.row#function16"
+        ]
+    },
+    /*17º COLABORADOR*/
+    "slider-layout-group#17": {
+        "children": [
+            "flex-layout.row#image17",
+            "flex-layout.row#name17",
+            "flex-layout.row#function17"
+        ]
+    },
+    /*18º COLABORADOR*/
+    "slider-layout-group#18": {
+        "children": [
+            "flex-layout.row#image18",
+            "flex-layout.row#name18",
+            "flex-layout.row#function18"
+        ]
+    },
+    /*19º COLABORADOR*/
+    "slider-layout-group#19": {
+        "children": [
+            "flex-layout.row#image19",
+            "flex-layout.row#name19",
+            "flex-layout.row#function19"
+        ]
+    },
+    /*
+        sliders page about us ACCT
+    */
+    "slider-layout#valores": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "arrowSize": 25,
+            "blockClass": "slidersValores",
+            "showPaginationDots": "never" //não apresenta os pontos de navegação do slide
+        },
+        "children": [
+            "flex-layout.row#slider1",
+            "flex-layout.row#slider2",
+            "flex-layout.row#slider3",
+            "flex-layout.row#slider4",
+            "flex-layout.row#slider5",
+            "flex-layout.row#slider6"
+        ]
+    },
+    //criação do slider layout superior trusted, responsivo para versões desktop e mobile
+    "slider-layout#topIcons": {
+        "props": {
+            //quantidade de itens apresentados por página dependendo do dispositivo utilizado
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true, //controle de deslize é infinito
+            "showNavigationArrows": "always", //apresenta as setas do slide em qualquer dispositivo
+            "showPaginationDots": "never", //não apresenta os pontos de navegação do slide
+            "blockClass":"trustedicons"
+        },
+        "children": [
+            //filhos do slide principal, basicamente os containers que teremos para as linhas
+            "slider-layout-group#topIcon1",
+            "slider-layout-group#topIcon2",
+            "slider-layout-group#topIcon3",
+            "slider-layout-group#topIcon4",
+            "slider-layout-group#topIcon5"
+        ]
+    },
+    /*INICIO 1º ÍCONE*/
+    "slider-layout-group#topIcon1": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#topIcon1"
+        ]
+    },
+    "image#topIcon1": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_carrefour.svg"
+        }
+    },
+    /*FIM 1º ÍCONE*/
+    /*INICIO 2º ÍCONE*/
+    "slider-layout-group#topIcon2": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#topIcon2"
+        ]
+    },
+    "image#topIcon2": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_samsung.svg"
+        }
+    },
+    /*FIM 2º ÍCONE*/
+    /*INICIO 3º ÍCONE*/
+    "slider-layout-group#topIcon3": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#topIcon3"
+        ]
+    },
+    "image#topIcon3": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_abinbev.svg"
+        }
+    },
+    /*FIM 3º ÍCONE*/
+    /*INICIO 4º ÍCONE*/
+    "slider-layout-group#topIcon4": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#topIcon4"
+        ]
+    },
+    "image#topIcon4": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_stanley-black-decker.svg"
+        }
+    },
+    /*FIM 4º ÍCONE*/
+    /*INICIO 5º ÍCONE*/
+    "slider-layout-group#topIcon5": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#topIcon5"
+        ]
+    },
+    "image#topIcon5": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_motorola.svg"
+        }
+    },
+    /*FIM 5º ÍCONE*/
+    //criação do slider layout inferior trusted, responsivo para versões desktop e mobile
+    "slider-layout#bottomIcons": {
+        "props": {
+            //quantidade de itens apresentados por página dependendo do dispositivo utilizado
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true, //controle de deslize é infinito
+            "showNavigationArrows": "always", //apresenta as setas do slide em qualquer dispositivo
+            "showPaginationDots": "never", //não apresenta os pontos de navegação do slide
+            "blockClass":"trustedicons"
+        },
+        "children": [
+            //filhos do slide principal, basicamente os containers que teremos para as linhas
+            "slider-layout-group#bottomIcon1",
+            "slider-layout-group#bottomIcon2",
+            "slider-layout-group#bottomIcon3",
+            "slider-layout-group#bottomIcon4",
+            "slider-layout-group#bottomIcon5"
+        ]
+    },
+    /*INICIO 1º ÍCONE*/
+    "slider-layout-group#bottomIcon1": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#bottomIcon1"
+        ]
+    },
+    "image#bottomIcon1": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_unilever.svg"
+        }
+    },
+    /*FIM 1º ÍCONE*/
+    /*INÍCIO 2º ÍCONE*/
+    "slider-layout-group#bottomIcon2": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#bottomIcon2"
+        ]
+    },
+    "image#bottomIcon2": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_whirlpool.svg"
+        }
+    },
+    /*FIM 2º ÍCONE*/
+    /*INÍCIO 3º ÍCONE*/
+    "slider-layout-group#bottomIcon3": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#bottomIcon3"
+        ]
+    },
+    "image#bottomIcon3": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_universal-mg.svg"
+        }
+    },
+    /*FIM 3º ÍCONE*/
+    /*INÍCIO 4º ÍCONE*/
+    "slider-layout-group#bottomIcon4": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#bottomIcon4"
+        ]
+    },
+    "image#bottomIcon4": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_decathlon.svg"
+        }
+    },
+    /*FIM 4º ÍCONE*/
+    /*INÍCIO 5º ÍCONE*/
+    "slider-layout-group#bottomIcon5": {
+        "props": {
+            "callToActionMode": "none"
+        },
+        "children": [
+            "image#bottomIcon5"
+        ]
+    },
+    "image#bottomIcon5": {
+        "props": {
+            "blockClass": "iconTrusted",
+            "maxWidth": 122.39,
+            "maxHeight": 177.86,
+            "src": "https://acct.global/wp-content/uploads/2020/09/clients_cea.svg"
+        }
+    }
+    /*FIM 5º ÍCONE*/
+}

@@ -1,0 +1,366 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktop"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "marginTop": 3,
+      "blockClass":"header"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer1",
+      "flex-layout.row#spacer1",
+      "flex-layout.col#spacer2",
+      "flex-layout.row#spacer2"
+    ]
+  },
+  "flex-layout.col#spacer1": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#spacer1": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
+  },
+  "flex-layout.col#spacer2": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#spacer2": {
+    "props": {
+      "marginTop": 6
+    },
+    "children": [
+      "vtex.menu@2.x:menu#locale"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo-acct-black.png",
+      "width": 150,
+      "height": 40
+    }
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#home",
+      "menu-item#acct",
+      "menu-item#oquefazemos",
+      "menu-item#cadastre-se",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "menu-item#home": {
+    "props": {
+      "id": "menu-item-home",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "home",
+        "text": "Home"
+      }
+    }
+  },
+  "menu-item#acct": {
+    "props": {
+      "id": "menu-item-acct",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "acct",
+        "text": "ACCT"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categories"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categories": {
+    "children": [
+      "vtex.menu@2.x:menu#sobre"
+    ]
+  },
+  "vtex.menu@2.x:menu#sobre": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-sobre",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "sobre",
+            "text": "Sobre"
+          }
+        },
+        {
+          "id": "menu-item-carreiras",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "carreiras",
+            "text": "Carreiras"
+          }
+        },
+        {
+          "id": "menu-item-imprensa",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "imprensa",
+            "text": "Imprensa"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#oquefazemos": {
+    "props": {
+      "id": "menu-item-oquefazemos",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "oquefazemos",
+        "text": "O Que Fazemos?"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#categories1"
+    ]
+  },
+  "vtex.menu@2.x:submenu#categories1": {
+    "children": [
+      "vtex.menu@2.x:menu#servicos"
+    ]
+  },
+  "vtex.menu@2.x:menu#servicos": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-servicos",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "servicos",
+            "text": "Serviços"
+          }
+        },
+        {
+          "id": "menu-item-categoriasindustriais",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "categoriasindustrias",
+            "text": "Categorias Industriais"
+          }
+        },
+        {
+          "id": "menu-item-cases",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "cases",
+            "text": "Cases de Sucesso"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#cadastre-se": {
+    "props": {
+      "id": "menu-item-cadraste-se",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "cadastre-se",
+        "text": "Cadastre-se"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#locale": {
+    "children": [
+      "menu-item#EN",
+      "menu-item#PT",
+      "menu-item#ES"
+    ]
+  },
+  "menu-item#EN": {
+    "props": {
+      "id": "menu-item-EN",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "en",
+        "text": "EN"
+      }
+    }
+  },
+  "menu-item#PT": {
+    "props": {
+      "id": "menu-item-PT",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "pt",
+        "text": "PT"
+      }
+    }
+  },
+  "menu-item#ES": {
+    "props": {
+      "id": "menu-item-ES",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "es",
+        "text": "ES"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#entar": {
+    "children": [
+      "menu-item#Entrar"
+    ]
+  },
+  "menu-item#Entrar": {
+    "props": {
+      "id": "menu-item-Entrar",
+      "type": "custom",
+      "highlight": true,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "entrar",
+        "text": "Login"
+      }
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#mobile"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#mobile"
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "minicart.v2",
+      "login"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#home",
+      "menu-item#acct",
+      "menu-item#oquefazemos",
+      "menu-item#cadastre-se",
+      "menu-item#Entrar"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+}

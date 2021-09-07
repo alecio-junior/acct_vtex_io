@@ -1,0 +1,18 @@
+.gallery{
+    margin: 20px;
+}
+
+.galleryItem{
+    margin-top: 40px;
+}
+
+.defaultGalleryLayout{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery--grid{
+    padding-top: 0px;
+    padding-bottom: 45px;
+    margin-top: 2px;
+}

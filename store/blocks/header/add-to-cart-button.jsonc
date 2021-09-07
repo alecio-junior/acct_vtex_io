@@ -1,0 +1,8 @@
+{
+    "add-to-cart-button#lp": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "VER DETALHES"
+        }
+    }
+}

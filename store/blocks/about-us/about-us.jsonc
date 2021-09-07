@@ -1,0 +1,44 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      //banner sobrenos
+      "flex-layout.row#banner",
+      //projetando o futuro
+      "flex-layout.row#projetando",
+      //layout valores
+      "slider-layout#valores",
+      //why and reasons
+      "flex-layout.row#why",
+      "flex-layout.row#reasons",
+      /*
+        Blocos que exibem os clientes e colaboradores
+      */
+      "flex-layout.row#trustedby",
+      "slider-layout#topIcons",
+      "slider-layout#bottomIcons",
+      "rich-text#time",
+      "rich-text#h4",
+      "slider-layout#time"
+    ]
+  },
+  /*
+      Bloco de texto que imprime o título "Time_" com markdown no _ (deixando ele amarelo)
+    */
+  "rich-text#time": {
+    "props": {
+      "text": "Time**_**",
+      "textPosition": "CENTER",
+      "blockClass": "subtitle"
+    }
+  },
+  /*
+      Bloco de texto com uma frase
+    */
+  "rich-text#h4": {
+    "props": {
+      "text": "**A ACCT tem uma equipe interna de alto desempenho** com recursos de 360 graus para fornecer soluções de tecnologia de alta complexidade.",
+      "textPosition": "CENTER",
+      "blockClass": "legenda"
+    }
+  }
+}

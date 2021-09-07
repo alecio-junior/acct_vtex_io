@@ -1,0 +1,39 @@
+/*
+    Posiciona a paginação dots
+*/
+.paginationDotsContainer{
+    bottom: -30px;
+}
+
+/*
+    COMEÇO CUSTOMIZAÇÃO SLIDER
+*/
+.caretIcon{
+    margin: 0 30px;
+}
+
+.sliderTrack{
+    flex-basis: 80%
+}
+
+.sliderLayoutContainer--slidersValores{
+    height: 40vh !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.sliderTrack--trustedicons{
+    height: 15vh;
+}
+
+.slideChildrenContainer--trustedicons{
+    height: 20px;
+}
+/*
+    FIM CUSTOMIZAÇÃO SLIDER
+*/

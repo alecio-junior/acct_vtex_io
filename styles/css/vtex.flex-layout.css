@@ -1,0 +1,92 @@
+/*
+    header
+*/
+.flexRow--header{
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+/*
+    saiba mais
+*/
+.flexRow--saibamais{
+    margin-top: 110px;
+    margin-left: 37%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    banner sobre nós
+*/
+.flexRow--banner{
+    background-image: url("assets/cover-about-us.jpg");
+    height: 25vh;
+}
+
+.flexCol--somos{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 400px !important;
+}
+.flexColChild--image-about-us{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+/*
+    projetando
+*/
+.flexRowContent--projetando{
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+    why and reasons
+*/
+.flexRow--why{
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+/*
+    COMEÇO CUSTOMIZAÇÃO LINHAS
+*/
+.stretchChildrenWidth{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 90%;
+}
+
+/*
+    trusted by
+*/
+.flexRow--trustedby{
+    margin-top: 20px;
+}
+
+.flexRowContent--icon1{
+   justify-content: center;
+   max-width: 90%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.flexRowContent--icons2{
+    justify-content: center;
+    padding-bottom: 50px;
+ }
+ /*
+    FIM CUSTOMIZAÇÃO LINHAS
+ */
+ /*
+    Footer
+ */
+ .flexCol--footerBlock{
+    width: fit-content;
+    height: fit-content;
+ }
